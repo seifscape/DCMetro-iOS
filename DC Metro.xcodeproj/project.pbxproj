@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A8F539210E6A77007F9E1A /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8F538210E6A77007F9E1A /* APIRouter.swift */; };
+		28A8F53D210E6B62007F9E1A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8F53C210E6B62007F9E1A /* Constants.swift */; };
+		28A8F540210EA04F007F9E1A /* MetroLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8F53F210EA04F007F9E1A /* MetroLine.swift */; };
+		28A8F543210EA822007F9E1A /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8F542210EA822007F9E1A /* BaseRouter.swift */; };
+		28A8F545210EA8B4007F9E1A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8F544210EA8B4007F9E1A /* APIManager.swift */; };
+		28A8F547210EA995007F9E1A /* RailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8F546210EA995007F9E1A /* RailsRouter.swift */; };
+		28A8F54C210EB35D007F9E1A /* RailsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8F54B210EB35D007F9E1A /* RailsServices.swift */; };
 		28AB68CD210E4289004B7CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB68CC210E4289004B7CF8 /* AppDelegate.swift */; };
-		28AB68CF210E4289004B7CF8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB68CE210E4289004B7CF8 /* FirstViewController.swift */; };
+		28AB68CF210E4289004B7CF8 /* RailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB68CE210E4289004B7CF8 /* RailsViewController.swift */; };
 		28AB68D1210E4289004B7CF8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB68D0210E4289004B7CF8 /* SecondViewController.swift */; };
 		28AB68D4210E4289004B7CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AB68D2210E4289004B7CF8 /* Main.storyboard */; };
 		28AB68D6210E428A004B7CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AB68D5210E428A004B7CF8 /* Assets.xcassets */; };
 		28AB68D9210E428A004B7CF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AB68D7210E428A004B7CF8 /* LaunchScreen.storyboard */; };
 		28AB68E4210E428A004B7CF8 /* DC_MetroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB68E3210E428A004B7CF8 /* DC_MetroTests.swift */; };
 		28AB68EF210E428A004B7CF8 /* DC_MetroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB68EE210E428A004B7CF8 /* DC_MetroUITests.swift */; };
+		434633CB753B0C42B1FE54F7 /* Pods_DC_MetroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07279B94DB7C320EE219BD61 /* Pods_DC_MetroUITests.framework */; };
+		C3CA7C4CABF7D6703CC193E2 /* Pods_DC_Metro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFFD2351716BC02A132974 /* Pods_DC_Metro.framework */; };
+		F05DB2FFA687929AB718BF3A /* Pods_DC_MetroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C4ED60B0C63ECD799D1DD8 /* Pods_DC_MetroTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07279B94DB7C320EE219BD61 /* Pods_DC_MetroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DC_MetroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28A8F538210E6A77007F9E1A /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		28A8F53A210E6ACB007F9E1A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		28A8F53C210E6B62007F9E1A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		28A8F53F210EA04F007F9E1A /* MetroLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroLine.swift; sourceTree = "<group>"; };
+		28A8F542210EA822007F9E1A /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		28A8F544210EA8B4007F9E1A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		28A8F546210EA995007F9E1A /* RailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailsRouter.swift; sourceTree = "<group>"; };
+		28A8F54B210EB35D007F9E1A /* RailsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailsServices.swift; sourceTree = "<group>"; };
 		28AB68C9210E4289004B7CF8 /* DC Metro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DC Metro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AB68CC210E4289004B7CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28AB68CE210E4289004B7CF8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		28AB68CE210E4289004B7CF8 /* RailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailsViewController.swift; sourceTree = "<group>"; };
 		28AB68D0210E4289004B7CF8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		28AB68D3210E4289004B7CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28AB68D5210E428A004B7CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +68,14 @@
 		28AB68EA210E428A004B7CF8 /* DC MetroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DC MetroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AB68EE210E428A004B7CF8 /* DC_MetroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DC_MetroUITests.swift; sourceTree = "<group>"; };
 		28AB68F0210E428A004B7CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CFFD2351716BC02A132974 /* Pods_DC_Metro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DC_Metro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1157C15F59F63EE5503CCE /* Pods-DC Metro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DC Metro.release.xcconfig"; path = "Pods/Target Support Files/Pods-DC Metro/Pods-DC Metro.release.xcconfig"; sourceTree = "<group>"; };
+		824BE61DA79391539260928A /* Pods-DC MetroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DC MetroUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DC MetroUITests/Pods-DC MetroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A912D08D73431EB3D6AF73F8 /* Pods-DC Metro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DC Metro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DC Metro/Pods-DC Metro.debug.xcconfig"; sourceTree = "<group>"; };
+		AF85479B6855402A927AEA43 /* Pods-DC MetroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DC MetroUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DC MetroUITests/Pods-DC MetroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D2C4ED60B0C63ECD799D1DD8 /* Pods_DC_MetroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DC_MetroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D414730E785AB7D4D11EDDDA /* Pods-DC MetroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DC MetroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DC MetroTests/Pods-DC MetroTests.release.xcconfig"; sourceTree = "<group>"; };
+		F696CE37991CA8182AFBF681 /* Pods-DC MetroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DC MetroTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DC MetroTests/Pods-DC MetroTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CA7C4CABF7D6703CC193E2 /* Pods_DC_Metro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05DB2FFA687929AB718BF3A /* Pods_DC_MetroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +99,91 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434633CB753B0C42B1FE54F7 /* Pods_DC_MetroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113F17493B8B1A0EFE1D1EB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A912D08D73431EB3D6AF73F8 /* Pods-DC Metro.debug.xcconfig */,
+				5E1157C15F59F63EE5503CCE /* Pods-DC Metro.release.xcconfig */,
+				F696CE37991CA8182AFBF681 /* Pods-DC MetroTests.debug.xcconfig */,
+				D414730E785AB7D4D11EDDDA /* Pods-DC MetroTests.release.xcconfig */,
+				824BE61DA79391539260928A /* Pods-DC MetroUITests.debug.xcconfig */,
+				AF85479B6855402A927AEA43 /* Pods-DC MetroUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		25472920A5A1871C63D7A03B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44CFFD2351716BC02A132974 /* Pods_DC_Metro.framework */,
+				D2C4ED60B0C63ECD799D1DD8 /* Pods_DC_MetroTests.framework */,
+				07279B94DB7C320EE219BD61 /* Pods_DC_MetroUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28A8F537210E6A59007F9E1A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				28A8F54A210EB34C007F9E1A /* Services */,
+				28A8F541210EA813007F9E1A /* Router */,
+				28A8F538210E6A77007F9E1A /* APIRouter.swift */,
+				28A8F53A210E6ACB007F9E1A /* APIClient.swift */,
+				28A8F544210EA8B4007F9E1A /* APIManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		28A8F53E210EA029007F9E1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28A8F53F210EA04F007F9E1A /* MetroLine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28A8F541210EA813007F9E1A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				28A8F542210EA822007F9E1A /* BaseRouter.swift */,
+				28A8F546210EA995007F9E1A /* RailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		28A8F548210EAAE4007F9E1A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28AB68CE210E4289004B7CF8 /* RailsViewController.swift */,
+				28AB68D0210E4289004B7CF8 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		28A8F549210EAAF9007F9E1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28AB68D2210E4289004B7CF8 /* Main.storyboard */,
+				28AB68D7210E428A004B7CF8 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28A8F54A210EB34C007F9E1A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				28A8F54B210EB35D007F9E1A /* RailsServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		28AB68C0210E4289004B7CF8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +191,8 @@
 				28AB68E2210E428A004B7CF8 /* DC MetroTests */,
 				28AB68ED210E428A004B7CF8 /* DC MetroUITests */,
 				28AB68CA210E4289004B7CF8 /* Products */,
+				113F17493B8B1A0EFE1D1EB4 /* Pods */,
+				25472920A5A1871C63D7A03B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +209,14 @@
 		28AB68CB210E4289004B7CF8 /* DC Metro */ = {
 			isa = PBXGroup;
 			children = (
+				28A8F549210EAAF9007F9E1A /* Views */,
+				28A8F548210EAAE4007F9E1A /* Controllers */,
+				28A8F53E210EA029007F9E1A /* Models */,
+				28A8F537210E6A59007F9E1A /* Network */,
 				28AB68CC210E4289004B7CF8 /* AppDelegate.swift */,
-				28AB68CE210E4289004B7CF8 /* FirstViewController.swift */,
-				28AB68D0210E4289004B7CF8 /* SecondViewController.swift */,
-				28AB68D2210E4289004B7CF8 /* Main.storyboard */,
 				28AB68D5210E428A004B7CF8 /* Assets.xcassets */,
-				28AB68D7210E428A004B7CF8 /* LaunchScreen.storyboard */,
 				28AB68DA210E428A004B7CF8 /* Info.plist */,
+				28A8F53C210E6B62007F9E1A /* Constants.swift */,
 			);
 			path = "DC Metro";
 			sourceTree = "<group>";
@@ -135,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28AB68F3210E428A004B7CF8 /* Build configuration list for PBXNativeTarget "DC Metro" */;
 			buildPhases = (
+				CC9642E699AC265D8675415F /* [CP] Check Pods Manifest.lock */,
 				28AB68C5210E4289004B7CF8 /* Sources */,
 				28AB68C6210E4289004B7CF8 /* Frameworks */,
 				28AB68C7210E4289004B7CF8 /* Resources */,
+				4B0E2E0AE44E13C4099C0696 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28AB68F6210E428A004B7CF8 /* Build configuration list for PBXNativeTarget "DC MetroTests" */;
 			buildPhases = (
+				EC6E2061C38054CFBB1A9DE9 /* [CP] Check Pods Manifest.lock */,
 				28AB68DB210E428A004B7CF8 /* Sources */,
 				28AB68DC210E428A004B7CF8 /* Frameworks */,
 				28AB68DD210E428A004B7CF8 /* Resources */,
+				41B068F81A9E43D086982B04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28AB68F9210E428A004B7CF8 /* Build configuration list for PBXNativeTarget "DC MetroUITests" */;
 			buildPhases = (
+				59C57970A3C3D0BF493BE2D0 /* [CP] Check Pods Manifest.lock */,
 				28AB68E6210E428A004B7CF8 /* Sources */,
 				28AB68E7210E428A004B7CF8 /* Frameworks */,
 				28AB68E8210E428A004B7CF8 /* Resources */,
@@ -254,14 +370,186 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41B068F81A9E43D086982B04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DC MetroTests/Pods-DC MetroTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts-Swift/BoltsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FLKAutoLayout/FLKAutoLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/ORStackView/ORStackView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Skeleton/Skeleton.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BoltsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLKAutoLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ORStackView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skeleton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DC MetroTests/Pods-DC MetroTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B0E2E0AE44E13C4099C0696 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DC Metro/Pods-DC Metro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts-Swift/BoltsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FLKAutoLayout/FLKAutoLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/ORStackView/ORStackView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Skeleton/Skeleton.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BoltsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLKAutoLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ORStackView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skeleton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DC Metro/Pods-DC Metro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59C57970A3C3D0BF493BE2D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DC MetroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC9642E699AC265D8675415F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DC Metro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6E2061C38054CFBB1A9DE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DC MetroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28AB68C5210E4289004B7CF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A8F547210EA995007F9E1A /* RailsRouter.swift in Sources */,
 				28AB68D1210E4289004B7CF8 /* SecondViewController.swift in Sources */,
+				28A8F539210E6A77007F9E1A /* APIRouter.swift in Sources */,
 				28AB68CD210E4289004B7CF8 /* AppDelegate.swift in Sources */,
-				28AB68CF210E4289004B7CF8 /* FirstViewController.swift in Sources */,
+				28A8F545210EA8B4007F9E1A /* APIManager.swift in Sources */,
+				28A8F54C210EB35D007F9E1A /* RailsServices.swift in Sources */,
+				28AB68CF210E4289004B7CF8 /* RailsViewController.swift in Sources */,
+				28A8F53D210E6B62007F9E1A /* Constants.swift in Sources */,
+				28A8F540210EA04F007F9E1A /* MetroLine.swift in Sources */,
+				28A8F543210EA822007F9E1A /* BaseRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +720,7 @@
 		};
 		28AB68F4210E428A004B7CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A912D08D73431EB3D6AF73F8 /* Pods-DC Metro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +739,7 @@
 		};
 		28AB68F5210E428A004B7CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1157C15F59F63EE5503CCE /* Pods-DC Metro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,8 +758,9 @@
 		};
 		28AB68F7210E428A004B7CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F696CE37991CA8182AFBF681 /* Pods-DC MetroTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55KEXMK3QR;
@@ -489,8 +780,9 @@
 		};
 		28AB68F8210E428A004B7CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D414730E785AB7D4D11EDDDA /* Pods-DC MetroTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55KEXMK3QR;
@@ -510,6 +802,7 @@
 		};
 		28AB68FA210E428A004B7CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 824BE61DA79391539260928A /* Pods-DC MetroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +823,7 @@
 		};
 		28AB68FB210E428A004B7CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF85479B6855402A927AEA43 /* Pods-DC MetroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

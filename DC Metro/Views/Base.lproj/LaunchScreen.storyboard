@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,33 +22,42 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashImage" translatesAutoresizingMaskIntoConstraints="NO" id="Rzp-u4-G27">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DC Metro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHW-Pk-oNv">
-                                <rect key="frame" x="44" y="457" width="287" height="182"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metro_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HVg-jK-Z62">
+                                <rect key="frame" x="130" y="191" width="115" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HVg-jK-Z62" secondAttribute="height" multiplier="23:28" id="0Dv-Ke-3Ke"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DC Open Doors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJm-JW-X3d">
+                                <rect key="frame" x="88" y="669" width="200" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="FJm-JW-X3d" firstAttribute="centerX" secondItem="HVg-jK-Z62" secondAttribute="centerX" id="1TH-fa-4jT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rzp-u4-G27" secondAttribute="bottom" id="1rZ-dJ-HfG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QHW-Pk-oNv" secondAttribute="bottom" constant="139" id="Inn-mk-DKT"/>
+                            <constraint firstItem="HVg-jK-Z62" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="JLq-LH-Hol"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rzp-u4-G27" secondAttribute="trailing" id="KML-kK-3rT"/>
-                            <constraint firstItem="QHW-Pk-oNv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="R3L-eX-Osk"/>
-                            <constraint firstItem="QHW-Pk-oNv" firstAttribute="centerX" secondItem="Rzp-u4-G27" secondAttribute="centerX" id="gDr-b5-Wqa"/>
+                            <constraint firstItem="HVg-jK-Z62" firstAttribute="centerX" secondItem="Rzp-u4-G27" secondAttribute="centerX" id="L1y-g7-Wft"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FJm-JW-X3d" secondAttribute="bottom" constant="73" id="a5L-ag-68I"/>
                             <constraint firstItem="Rzp-u4-G27" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pPO-PL-eZ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HVg-jK-Z62" secondAttribute="bottom" constant="447" id="rRD-KN-vFt"/>
                             <constraint firstItem="Rzp-u4-G27" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xSr-ZL-SGm"/>
-                            <constraint firstItem="QHW-Pk-oNv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="413" id="yt0-EM-VnJ"/>
+                            <constraint firstItem="FJm-JW-X3d" firstAttribute="top" secondItem="Rzp-u4-G27" secondAttribute="bottom" constant="-109" id="xrH-Fm-e2e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
     <resources>
         <image name="SplashImage" width="2172" height="4000"/>
+        <image name="metro_logo" width="469" height="600"/>
     </resources>
 </document>
