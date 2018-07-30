@@ -6,6 +6,9 @@ PODS:
   - Bolts-Swift (1.4.0)
   - CodableAlamofire (1.1.0):
     - Alamofire (~> 4.0)
+  - Crashlytics (3.10.2):
+    - Fabric (~> 1.7.7)
+  - Fabric (1.7.7)
   - FLKAutoLayout (0.2.1)
   - HandyJSON (4.0.0-beta.1)
   - KeychainAccess (3.1.1)
@@ -53,6 +56,8 @@ DEPENDENCIES:
   - AlamofireObjectMapper
   - Bolts-Swift (from `https://github.com/BoltsFramework/Bolts-Swift.git`)
   - CodableAlamofire
+  - Crashlytics
+  - Fabric
   - HandyJSON (= 4.0.0-beta.1)
   - KeychainAccess
   - lottie-ios
@@ -73,6 +78,8 @@ SPEC REPOS:
     - Alamofire
     - AlamofireObjectMapper
     - CodableAlamofire
+    - Crashlytics
+    - Fabric
     - FLKAutoLayout
     - HandyJSON
     - KeychainAccess
@@ -104,6 +111,8 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
   Bolts-Swift: 650d72e8017721b1a6bbe43d542c4578f8e5ba6f
   CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
+  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
   FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
   HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
   KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
@@ -121,6 +130,6 @@ SPEC CHECKSUMS:
   SkeletonView: 98a31213f9282076149e6eb23f46734604f02086
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 5c2cc9f29efeb5d876cb926c0c64c182a39c21d2
+PODFILE CHECKSUM: e17eda7ca12362454dc0339466a99dd40c850d98
 
 COCOAPODS: 1.5.2

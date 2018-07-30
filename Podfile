@@ -21,6 +21,8 @@ def shared_pods
     pod 'lottie-ios'
     pod 'Skeleton'
     pod 'SkeletonView'
+    pod 'Fabric'
+    pod 'Crashlytics'
 end
 
 def testing_pods
