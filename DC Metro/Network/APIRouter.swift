@@ -11,7 +11,7 @@ import Alamofire
 enum APIRouter: URLRequestConvertible {
     
     // Rails
-    case getLines
+    case getLines(lineCode: String?)
     case posts
     case post(id: Int)
     
@@ -44,8 +44,8 @@ enum APIRouter: URLRequestConvertible {
          dictParam["api_key"] = K.APIParameterKey.apiKey
         
         switch self {
-        case .getLines:
-            return nil
+        case .getLines(let lineCode):
+            return ["LineCode": lineCode ?? ""]
         case .posts, .post:
             return nil
         }

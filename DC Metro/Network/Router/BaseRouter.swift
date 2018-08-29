@@ -79,7 +79,8 @@ class BaseRouter : URLRequestConvertible, APIConfiguration {
         } else if self.method == Alamofire.HTTPMethod.put {
             return try Alamofire.URLEncoding.default.encode(urlRequest, with: self.parameters)
         } else {
-            return urlRequest
+           return try Alamofire.URLEncoding.queryString.encode(urlRequest, with: self.parameters)
+            //return urlRequest
         }
     }
 }
@@ -92,4 +93,17 @@ extension String: ParameterEncoding {
         return request
     }
     
+}
+
+extension String {
+    // https://useyourloaf.com/blog/how-to-percent-encode-a-url-string/
+    // https://stackoverflow.com/a/45813868
+
+    func stringByAddingPercentEncodingForRFC3986() -> String? {
+        let unreserved = "-._~/?"
+        let allowed = NSMutableCharacterSet.alphanumeric()
+        allowed.addCharacters(in: unreserved)
+//        return addingPercentEncoding(withAllowedCharacters: allowed as CharacterSet)
+        return addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) //https://stackoverflow.com/a/44643893
+    }
 }

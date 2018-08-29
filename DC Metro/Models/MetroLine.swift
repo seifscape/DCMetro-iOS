@@ -10,16 +10,26 @@ import Foundation
 import ObjectMapper
 
 class MetroLine: Mappable {
-    var lineCode: String?
-    var displayName: String?
-    var startStationCode: String?
-    var endStationCode: String?
+    var lineCode: String
+    var displayName: String
+    var startStationCode: String
+    var endStationCode: String
     var internalDestination1:String?
     var internalDestination2:String?
     
     
+    init(){
+        lineCode = String()
+        displayName = String()
+        startStationCode = String()
+        endStationCode = String()
+    }
+    
     required init?(map: Map) {
-        
+        lineCode = String()
+        displayName = String()
+        startStationCode = String()
+        endStationCode = String()
     }
     
     // Mappable

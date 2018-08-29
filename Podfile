@@ -23,6 +23,8 @@ def shared_pods
     pod 'SkeletonView'
     pod 'Fabric'
     pod 'Crashlytics'
+    pod 'Firebase'
+    pod 'LetterAvatarKit'
 end
 
 def testing_pods
