@@ -26,13 +26,15 @@ class RailsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.tableView?.dataSource = self
         self.tableView?.delegate   = self
         // Do any additional setup after loading the view, typically from a nib.
-        numberOfLines = self.retriveLines()
+//        numberOfLines = self.retriveLines()
+        numberOfLines = self.readJson(fileName: "RailLines")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.title = "Rails"
         self.navigationController?.navigationBar.barStyle = .default
+        // colormatchtabs yap database
 //        self.navigationController?.navigationBar.barTintColor = UIColor.white
 //        self.navigationController?.navigationBar.tintColor = UIColor.black
 //        self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
@@ -191,6 +193,38 @@ class RailsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             }
         }
     }
+
+    private func readJson(fileName:String) -> Promise <[MetroLine]>{
+        return Promise { seal in
+            do {
+                if let file = Bundle.main.url(forResource: fileName, withExtension: "json") {
+                    let data = try Data(contentsOf: file)
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    if let object = json as? [String: Any] {
+                        // json is a dictionary
+                        print(object)
+                        if let stations = object["Lines"] as? Array<AnyObject> {
+                            print(stations.first ?? "")
+                            let metroLines : Array<MetroLine> = Mapper<MetroLine>().mapArray(JSONArray: stations as! [[String : Any]])
+                            seal.fulfill(metroLines)
+                            self.tableView?.reloadData()
+                            
+                        }
+                    } else if let object = json as? [Any] {
+                        // json is an array
+                        print(object)
+                    } else {
+                        print("JSON is invalid")
+                    }
+                } else {
+                    print("no file")
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+
     
 func retriveStations(lineCodeString: String)-> Promise <[MetroStation]> {
     return Promise { seal in

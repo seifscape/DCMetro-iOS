@@ -23,12 +23,21 @@ class RailStationsViewController: UIViewController, UITableViewDelegate, UITable
     var listOfStations:Promise<[MetroStation]>?
     var metroLineJsonFile:String = ""
     
+    var currentMetroLine:MetroLine?
+    
+    
+    var unorderedMetroStations:Promise<[MetroStation]>?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.tableView?.dataSource = self
         self.tableView?.delegate   = self
         self.listOfStations = self.readJson(fileName: metroLineJsonFile)
+        
+        self.unorderedMetroStations = self.readJson(fileName: "AllRailStations")
+        
         //self.listOfStations = self.retrivePathBetweenStations(fromStation: (metroLine.startStationCode), toStation: metroLine.endStationCode)
     }
     
@@ -120,6 +129,14 @@ class RailStationsViewController: UIViewController, UITableViewDelegate, UITable
         let metroLine:MetroStation = (self.listOfStations?.value?[indexPath.row])!
         cell.textLabel?.text = metroLine.stationName
         cell.detailTextLabel?.text = metroLine.lineCode
+        
+        // sync || step by step medium
+        // swift 3 json read code smells
+        if metroLine.stationTogether != nil {
+            print("Code: " + metroLine.stationTogether!)
+        }
+        
+        
         
         var circleColor:UIColor? = nil
         
@@ -215,6 +232,18 @@ class RailStationsViewController: UIViewController, UITableViewDelegate, UITable
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func findPlatformsWithMultipleLines(currentLine:MetroLine) {
+        for station in (listOfStations?.value)! {
+            if currentLine.lineCode == station.code {
+                if station.stationTogether != nil {
+                    // station is a platform with more than one station
+                }
+            }
+        }
+        
+    }
+    
     // First load the tracks, followed by the unordered list and add the lines
     
     private func readJson(fileName:String) -> Promise <[MetroStation]>{
@@ -249,6 +278,47 @@ class RailStationsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
 
+    /*
+     //https://github.com/Hearst-DD/ObjectMapper/issues/974
+     //                            let people = Mapper<JsonDict>().mapArray(JSONObject: json["list"])
+     //https://github.com/Hearst-DD/ObjectMapper/issues/992
+     //                            let categoryResult = Mapper<CategoryResult>().map(JSONString: json)
+    */
+    
+    private func loadAllStations() -> Promise <[MetroStation]>{
+        return Promise { seal in
+            do {
+                if let file = Bundle.main.url(forResource: "AllRailStations", withExtension: "json") {
+                    let data = try Data(contentsOf: file)
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    if let object = json as? [String: Any] {
+                        // json is a dictionary
+                        print(object)
+                        if let stations = object["Stations"] as? [[String: Any]] {
+                            print(stations.first ?? "")
+                            let metroStations : Array<MetroStation> = Mapper<MetroStation>().mapArray(JSONArray: stations )
+                            seal.fulfill(metroStations)
+                            self.tableView?.reloadData()
+                            
+                        }
+                    } else if let object = json as? [Any] {
+                        // json is an array
+                        print(object)
+                    } else {
+                        print("JSON is invalid")
+                    }
+                } else {
+                    print("no file")
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+
+    
+    
+    
     /*
     // MARK: - Navigation
 
