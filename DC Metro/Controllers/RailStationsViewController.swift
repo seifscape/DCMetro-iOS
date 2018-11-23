@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import PromiseKit
-import SkeletonView
+//import SkeletonView
 import ObjectMapper
 import LetterAvatarKit
 
@@ -24,8 +24,6 @@ class RailStationsViewController: UIViewController, UITableViewDelegate, UITable
     var metroLineJsonFile:String = ""
     
     var currentMetroLine:MetroLine?
-    
-    
     var unorderedMetroStations:Promise<[MetroStation]>?
     
     
@@ -36,8 +34,9 @@ class RailStationsViewController: UIViewController, UITableViewDelegate, UITable
         self.tableView?.delegate   = self
         self.listOfStations = self.readJson(fileName: metroLineJsonFile)
         
-        self.unorderedMetroStations = self.readJson(fileName: "AllRailStations")
         
+        //self.unorderedMetroStations = self.readJson(fileName: "AllRailStations")
+        self.unorderedMetroStations = self.loadAllStations()
         //self.listOfStations = self.retrivePathBetweenStations(fromStation: (metroLine.startStationCode), toStation: metroLine.endStationCode)
     }
     
@@ -177,7 +176,7 @@ class RailStationsViewController: UIViewController, UITableViewDelegate, UITable
                     switch response.result {
                     case .success(let jsonResponse):
                         print(jsonResponse)
-                        if response.response?.statusCode == 200 {
+                        if response.response?.statusCode == BaseRouter.HTTPStatusCodes.ok.rawValue {
                             if let data = jsonResponse as? Dictionary<String, AnyObject> {
                                 if let rawJson = data["Path"] as? [[String: AnyObject]] {
                                     let metroStations : Array<MetroStation> = Mapper<MetroStation>().mapArray(JSONArray: rawJson)
@@ -188,7 +187,7 @@ class RailStationsViewController: UIViewController, UITableViewDelegate, UITable
                         }
                     case .failure(let error):
                         print(error)
-                        seal.reject(NSError(domain: "error retriving user", code:404, userInfo: nil))
+                        seal.reject(NSError(domain: "error retriving path between stations", code:404, userInfo: nil))
                     }
             }
         }
@@ -290,6 +289,7 @@ class RailStationsViewController: UIViewController, UITableViewDelegate, UITable
             do {
                 if let file = Bundle.main.url(forResource: "AllRailStations", withExtension: "json") {
                     let data = try Data(contentsOf: file)
+                    //https://stackoverflow.com/questions/40210266/crash-convert-dictionary-to-json-string-in-swift-3
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     if let object = json as? [String: Any] {
                         // json is a dictionary

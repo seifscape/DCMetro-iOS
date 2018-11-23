@@ -24,24 +24,27 @@ class MetroStation: Mappable {
     var name:String?
     var code:String?
     var lineCode:String
+    var lineCode1:String
     var stationName:String
     var seqNumber:Int
     var distanceToPrev:Int
     
     
     required init?(map: Map) {
-        lineCode = String()
-        stationName = String()
-        seqNumber = 0
-        distanceToPrev = 0
+        lineCode        = String()
+        lineCode1       = String()
+        stationName     = String()
+        seqNumber       = 0
+        distanceToPrev  = 0
     }
     
     // Mappable
     func mapping(map: Map) {
-        code            <- map["code"]
-        name            <- map["name"]
-        stationTogether <- map["stationTogether1"]
+        code            <- map["Code"]
+        name            <- map["Name"]
+        stationTogether <- map["StationTogether1"]
         lineCode        <- map["LineCode"]
+        lineCode1       <- map["LineCode1"]
         stationName     <- map["StationName"]
         stationCode     <- map["StationCode"]
         seqNumber       <- map["SeqNum"]

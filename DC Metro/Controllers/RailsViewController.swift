@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import PromiseKit
-import SkeletonView
+//import SkeletonView
 import ObjectMapper
 import LetterAvatarKit
 
@@ -52,9 +52,11 @@ class RailsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
+    /*
     func collectionSkeletonView(_ skeletonView: UITableView, cellIdenfierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
         return "metroLineCell"
     }
+    */
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         

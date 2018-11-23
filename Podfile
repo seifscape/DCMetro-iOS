@@ -20,7 +20,7 @@ def shared_pods
     pod 'CodableAlamofire'
     pod 'lottie-ios'
 #    pod 'Skeleton'
-    pod 'SkeletonView'
+#    pod 'SkeletonView'
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'Firebase'
